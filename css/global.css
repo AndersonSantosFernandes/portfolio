@@ -1,0 +1,58 @@
+*{
+    /* border: 1px solid rgb(227, 115, 115); */
+    /* color: aqua; */
+
+}
+body{
+    
+}
+
+.container{
+    margin-top: 70px;
+    /* border: 1px solid black; */
+    /* height: 85vh; */
+    display: grid;
+    grid-template-columns: 98%;
+    grid-template-rows: 60px 300px 250px;
+    grid-template-areas: 
+    "cabecalho"
+    "section"
+    "aside"    
+    ;
+    /* background-image: url("../imgs/tech.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sessao__peincipal{
+    grid-area: section;
+}
+.aside__principal{
+    grid-area: aside;
+    background-image: url("../imgs/tech.jpg");
+    background-size: cover;
+}
+
+@media(min-width:1200px){
+    .container{
+        margin-top: 70px;
+        /* border: 1px solid black; */
+        /* height: 85vh; */
+        /* display: grid; */
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: 80px 400px;
+        grid-template-areas: 
+        "cabecalho cabecalho cabecalho"
+        "section section aside"        
+        ;
+    }
+}
