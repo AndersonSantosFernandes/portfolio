@@ -1,58 +1,53 @@
-*{
-    /* border: 1px solid rgb(227, 115, 115); */
-    /* color: aqua; */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 
+*{
+    
+    font-family: 'Titillium Web', Courier, monospace ;    
 }
 body{
-    
-}
-
-.container{
-    margin-top: 70px;
-    /* border: 1px solid black; */
-    /* height: 85vh; */
-    display: grid;
-    grid-template-columns: 98%;
-    grid-template-rows: 60px 300px 250px;
-    grid-template-areas: 
-    "cabecalho"
-    "section"
-    "aside"    
-    ;
-    /* background-image: url("../imgs/tech.jpg"); */
-    background-repeat: no-repeat;
+    background-image: url("../imgs/dark\ onda.jpg");
     background-size: cover;
-
-    column-gap: 10px;
-    row-gap: 10px;
 }
 
-.cabecalho{
-    grid-area: cabecalho;
+.index__container{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apresentacao{
+    width: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
-.sessao__peincipal{
-    grid-area: section;
+.eu__img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
-.aside__principal{
-    grid-area: aside;
-    background-image: url("../imgs/tech.jpg");
-    background-size: cover;
+.meu__nome{
+    font-size: 50px;
+    font-weight: bold;
+    color: aliceblue;
+}
+.objetivo{
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
 }
 
-@media(min-width:1200px){
-    .container{
-        margin-top: 70px;
-        /* border: 1px solid black; */
-        /* height: 85vh; */
-        /* display: grid; */
-        grid-template-columns: 2fr 2fr 1fr;
-        grid-template-rows: 80px 400px;
-        grid-template-areas: 
-        "cabecalho cabecalho cabecalho"
-        "section section aside"        
-        ;
-    }
+.img__skills{
+    width: 150px;
 }
+.accordion-body{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.conteudo__skills p{
+    font-size: 20px;
+}
+ 
