@@ -50,4 +50,56 @@ body{
 .conteudo__skills p{
     font-size: 20px;
 }
- 
+.titulo__projrtos{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+} 
+
+.container__projetos{
+    background-color: aliceblue;
+    opacity: 1;
+}
+.img__projeto{
+    /* border: 1px solid palevioletred; */
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+.desc__projeto{
+    width: 100%;
+    /* border: 1px solid palevioletred; */
+    padding: 20px 0;
+}
+.imagem__projeto{
+    width: 100%;
+}
+.card_projetos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+.paragrafo__projeto{
+    text-indent: 30px;
+}
+
+@media(min-width:1024px){
+   
+    .img__projeto{
+        /* border: 1px solid palevioletred; */
+        width: 500px;
+    }
+    .desc__projeto{
+        width: 500px;
+        /* border: 1px solid palevioletred; */
+        
+    }
+    .imagem__projeto{
+        width: 500px;
+    }
+    .card_projetos{
+        width: 100%;
+        justify-content: space-around;
+    }  
+}
