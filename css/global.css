@@ -34,6 +34,7 @@ body{
     font-size: 50px;
     font-weight: bold;
     color: aliceblue;
+    text-align: center;
 }
 .objetivo{
     font-size: 30px;
@@ -43,7 +44,13 @@ body{
 
 .img__skills{
     width: 150px;
+    height: 160px;
 }
+
+.p__skill{
+    font-weight: bold;
+}
+
 .accordion-body{
     display: flex;
     gap: 20px;
@@ -89,9 +96,42 @@ body{
 
 .container__sobre{
     background-color: aliceblue;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    
 }
+.container__skills{
+    background-color: aliceblue;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+
 .titulo__principal{
     font-weight: bold;
+}
+.tecnologias h4{
+    font-weight: bold;
+}
+
+.desc__projeto h4{
+font-weight: bold;
+}
+
+.sobre__mim{
+    text-indent: 30px;
+    font-size: 20px;
+}
+.icones{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.icones i{
+color: aliceblue;
+font-size: 40px;
 }
 @media(min-width:1024px){
    
@@ -116,5 +156,12 @@ body{
     .tecnologias{
         width: 200px;
         padding-top: 20px;
+    }
+    .container__sobre{
+        height: 85vh;
+    }
+    .icones{
+        width: 40%;
+      
     }
 }
