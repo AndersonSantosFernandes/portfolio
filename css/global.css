@@ -7,6 +7,8 @@
 body{
     background-image: url("../imgs/dark\ onda.jpg");
     background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
 }
 
 .index__container{
@@ -84,22 +86,35 @@ body{
     text-indent: 30px;
 }
 
+
+.container__sobre{
+    background-color: aliceblue;
+}
+.titulo__principal{
+    font-weight: bold;
+}
 @media(min-width:1024px){
    
     .img__projeto{
         /* border: 1px solid palevioletred; */
-        width: 500px;
+        width: 400px;
+        height: 320px;
     }
     .desc__projeto{
-        width: 500px;
+        width: 400px;
         /* border: 1px solid palevioletred; */
         
     }
     .imagem__projeto{
-        width: 500px;
+        width: 400px;
+        height: 300px;
     }
     .card_projetos{
         width: 100%;
         justify-content: space-around;
     }  
+    .tecnologias{
+        width: 200px;
+        padding-top: 20px;
+    }
 }
